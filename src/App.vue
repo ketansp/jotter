@@ -13,6 +13,12 @@
 </template>
 
 <style lang="scss">
+html {
+  height: 95%;
+}
+body {
+  min-height: 95%;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,6 +28,7 @@
 
 #nav {
   text-align: right;
+  border-bottom: 2px solid #42b983;
 
   a {
     font-weight: bold;
@@ -71,5 +78,39 @@
 }
 .padding-bottom-15px {
   padding-bottom: 15px;
+}
+
+.padding-left-20px {
+  padding-left: 20px;
+}
+.padding-right-20px {
+  padding-right: 20px;
+}
+.padding-top-20px {
+  padding-top: 20px;
+}
+.padding-bottom-20px {
+  padding-bottom: 20px;
+}
+
+.margin-left-20px {
+  margin-left: 20px;
+}
+.margin-right-20px {
+  margin-right: 20px;
+}
+.margin-top-20px {
+  margin-top: 20px;
+}
+.margin-bottom-20px {
+  margin-bottom: 20px;
+}
+
+.margin-8px {
+  margin: 8px;
+}
+
+.float-left {
+  float: left;
 }
 </style>
