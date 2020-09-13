@@ -173,5 +173,30 @@ export default class NoteParent extends Vue {
     padding: 2px 0 2px 0px !important;
     line-height: normal !important;
   }
+
+  .cdx-checklist__item-checkbox {
+    width: 15px;
+    height: 15px;
+    margin: 5px 10px 5px 0;
+  }
+
+  .cdx-checklist__item-checkbox::after {
+    top: 3px;
+    left: 3px;
+  }
+
+  .cdx-checklist__item--checked .cdx-checklist__item-checkbox {
+    background: #42b983;
+    border-color: #42b983;
+  }
+
+  .cdx-checklist__item-text {
+    padding: 2px 0;
+  }
+
+  .ce-toolbox__button--active,
+  .ce-toolbox__button:hover {
+    color: #42b983;
+  }
 }
 </style>
