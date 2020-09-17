@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <img alt="jotter" src="./assets/logo.png" style="float: left; height: 30px;" />
     <div id="nav" class="padding-top-5px padding-bottom-10px">
       <router-link class="padding-right-15px" to="/">Home</router-link>
       <router-link class="padding-right-15px" to="/about">About</router-link>
