@@ -198,5 +198,36 @@ export default class NoteParent extends Vue {
   .ce-toolbox__button:hover {
     color: #42b983;
   }
+
+  .cdx-quote__text {
+    background: #ededed;
+    border-left: 5px solid #42b983;
+    font-style: italic;
+    font-size: 1.1em;
+  }
+
+  .cdx-quote__caption {
+    background: #ededed;
+    border-left: 5px solid #42b983;
+    font-style: italic;
+    font-size: 1.1em;
+  }
+
+  .cdx-quote {
+    padding-left: 25px;
+  }
+
+  .tc-toolbar__plus--ver {
+    color: #42b983 !important;
+  }
+  .tc-toolbar__plus--hor {
+    color: #42b983 !important;
+  }
+  .tc-toolbar__shine-line--hor {
+    color: #42b983 !important;
+  }
+  .tc-toolbar__shine-line--ver {
+    color: #42b983 !important;
+  }
 }
 </style>
