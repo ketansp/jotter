@@ -5,6 +5,8 @@ import NoteParent from '../views/notes/NoteParent.vue';
 import TaskParent from '../views/tasks/TaskParent.vue';
 import CalendatParent from '../views/calendar/CalendarParent.vue';
 import OtherParent from '../views/others/OtherParent.vue';
+import GoalParent from '../views/goals/GoalParent.vue';
+import RelaxationParent from '../views/relaxation/RelaxationParent.vue';
 
 Vue.use(VueRouter);
 
@@ -12,27 +14,37 @@ const routes: RouteConfig[] = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: Home
   },
   {
     path: '/notes',
     name: 'Notes',
-    component: NoteParent,
+    component: NoteParent
   },
   {
     path: '/tasks',
     name: 'Tasks',
-    component: TaskParent,
+    component: TaskParent
   },
   {
     path: '/calendar',
     name: 'Calendar',
-    component: CalendatParent,
+    component: CalendatParent
+  },
+  {
+    path: '/goals',
+    name: 'Goals',
+    component: GoalParent
+  },
+  {
+    path: '/relax',
+    name: 'Relax',
+    component: RelaxationParent
   },
   {
     path: '/more',
     name: 'More',
-    component: OtherParent,
+    component: OtherParent
   },
   {
     path: '/about',

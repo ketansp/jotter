@@ -7,6 +7,8 @@
       <router-link class="padding-right-15px" to="/notes">Notes</router-link>
       <router-link class="padding-right-15px" to="/tasks">Tasks</router-link>
       <router-link class="padding-right-15px" to="/calendar">Calendar</router-link>
+      <router-link class="padding-right-15px" to="/goals">Goals</router-link>
+      <router-link class="padding-right-15px" to="/relax">Relax</router-link>
       <router-link class="padding-right-15px" to="/more">More</router-link>
     </div>
     <router-view />
