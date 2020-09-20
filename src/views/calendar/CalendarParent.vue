@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import VueCal from "vue-cal";
+const VueCal = require("vue-cal");
 import "vue-cal/dist/vuecal.css";
 
 @Component({
