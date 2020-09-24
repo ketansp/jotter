@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="jotter" src="./assets/logo.png" style="float: left; height: 30px;" />
-    <div id="nav" class="padding-top-5px padding-bottom-10px">
+    <div id="nav" class="padding-top-10px padding-bottom-10px">
       <router-link class="padding-right-15px" to="/">Home</router-link>
       <router-link class="padding-right-15px" to="/about">About</router-link>
       <router-link class="padding-right-15px" to="/notes">Notes</router-link>
@@ -115,5 +115,12 @@ body {
 
 .float-left {
   float: left;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 </style>

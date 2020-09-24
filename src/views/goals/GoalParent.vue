@@ -1,34 +1,50 @@
 <template>
-  <div style="display: flex; flex-direction: row;">
-    <div class="width-66-percent">
-      <img src="../../assets/goals.png" style="max-height:300px;" />
-    </div>
-    <div class="width-33-percent">
-      Professional Goal
-      <div class="card">
-        <h3>Descrição da funcionalidade deve vir abaixo do título do caso de uso.</h3>
-        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.</p>
-      </div>
-    </div>
-    <div class="width-33-percent">
-      Professional Goal
-      <div class="card">
-        <h3>Descrição da funcionalidade deve vir abaixo do título do caso de uso.</h3>
-        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.</p>
-      </div>
-    </div>
-    <div class="width-33-percent">
-      Professional Goal
-      <div class="card">
-        <h3>Descrição da funcionalidade deve vir abaixo do título do caso de uso.</h3>
-        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.</p>
-      </div>
-    </div>
-    <div class="width-33-percent">
-      Professional Goal
-      <div class="card">
-        <h3>Descrição da funcionalidade deve vir abaixo do título do caso de uso.</h3>
-        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.</p>
+  <div class="row">
+    <div class="col-sm-10 offset-sm-1">
+      <div class="row">
+        <div class="col-sm-8" style="text-align:center;">
+          <img src="../../assets/goals.png" class="block-height margin-top-20px margin-bottom-20px" />
+        </div>
+        <div class="col-sm-4 padding-top-20px padding-bottom-20px">
+          <div class="card block-height">
+            <h5 class="card-header">Professional Goal</h5>
+            <div
+              class="card-body overflow-y-scroll placeholder-text"
+              data-placeholder="Specify a tangible and measurable goal related to your profession or career, with a target date. "
+              contenteditable="true"
+            ></div>
+          </div>
+        </div>
+        <div class="col-sm-4 padding-top-20px padding-bottom-20px">
+          <div class="card block-height">
+            <h5 class="card-header">Personal Goal</h5>
+            <div
+              class="card-body overflow-y-scroll placeholder-text"
+              data-placeholder="Specify a tangible and measurable goal which would make you a better human, with a target date. "
+              contenteditable="true"
+            ></div>
+          </div>
+        </div>
+        <div class="col-sm-4 padding-top-20px padding-bottom-20px">
+          <div class="card block-height">
+            <h5 class="card-header">Contribution Goal</h5>
+            <div
+              class="card-body overflow-y-scroll placeholder-text"
+              data-placeholder="Specify a tangible and measurable goal related to contributions towards society, with a target date. "
+              contenteditable="true"
+            ></div>
+          </div>
+        </div>
+        <div class="col-sm-4 padding-top-20px padding-bottom-20px">
+          <div class="card block-height">
+            <h5 class="card-header">Adventure Goal</h5>
+            <div
+              class="card-body overflow-y-scroll placeholder-text"
+              data-placeholder="Specify a tangible and measurable goal for your next adventure, with a target date. "
+              contenteditable="true"
+            ></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -54,12 +70,11 @@ export default class GoalParent extends Vue {}
   width: 33%;
 }
 
-.card {
-  display: inline-block;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
-  margin: 20px;
-  position: relative;
-  margin-bottom: 50px;
-  transition: all 0.2s ease-in-out;
+.block-height {
+  height: 300px;
+}
+
+.placeholder-text:empty:not(:focus):before {
+  content: attr(data-placeholder);
 }
 </style>
