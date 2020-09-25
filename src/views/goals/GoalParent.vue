@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row" id="goal-parent">
     <div class="col-sm-10 offset-sm-1">
       <div class="row">
         <div class="col-sm-8" style="text-align:center;">
@@ -76,5 +76,17 @@ export default class GoalParent extends Vue {}
 
 .placeholder-text:empty:not(:focus):before {
   content: attr(data-placeholder);
+  color: rgba(0, 0, 0, 0.35);
+}
+
+#goal-parent {
+  .card-header {
+    border-bottom: 2px solid #42b983;
+    background-color: inherit;
+  }
+
+  .card {
+    border: none;
+  }
 }
 </style>
