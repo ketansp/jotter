@@ -38,13 +38,13 @@ const Warning = require("@editorjs/warning");
   components: {}
 })
 export default class NoteParent extends Vue {
-  editor = new EditorJS({
+  public editor = new EditorJS({
     /**
      * Id of Element that should contain Editor instance
      */
     holder: "editor",
     autofocus: true,
-    //data: existingData,
+    // data: existingData,
     tools: {
       header: {
         class: Header,

@@ -14,13 +14,14 @@
       "spaces",
       2
     ],
+    "no-var-requires": false,
     "interface-name": false,
     "no-consecutive-blank-lines": false,
     "object-literal-sort-keys": false,
     "ordered-imports": false,
     "quotemark": [
       true,
-      "single"
+      "double"
     ],
     "trailing-comma": [
       true,

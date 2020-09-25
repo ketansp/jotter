@@ -21,14 +21,14 @@ import "vue-cal/dist/vuecal.css";
   }
 })
 export default class NoteParent extends Vue {
-  data() {
+  public data() {
     return {
       events: [
         {
           start: new Date("2020-09-21"),
           end: new Date("2020-09-22"),
           title: "Need to go shopping",
-          content: '<i class="v-icon material-icons">shopping_cart</i>',
+          content: "<i class=\"v-icon material-icons\">shopping_cart</i>",
           class: "leisure"
         }
         // {
