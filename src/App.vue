@@ -1,7 +1,12 @@
 <template>
   <div id="app">
-    <img alt="jotter" src="./assets/logo.png" style="float: left; height: 42px;" />
-    <div id="nav" class="padding-top-10px padding-bottom-10px">
+    <img
+      alt="jotter"
+      src="./assets/logo.png"
+      class="padding-left-15px"
+      style="float: left; height: 45px;"
+    />
+    <div id="nav" class="padding-top-10px padding-bottom-10px padding-right-15px">
       <router-link class="padding-right-15px" to="/">Home</router-link>
       <router-link class="padding-right-15px" to="/notes">Notes</router-link>
       <router-link class="padding-right-15px" to="/tasks">Tasks</router-link>
