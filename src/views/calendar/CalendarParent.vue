@@ -28,7 +28,7 @@ export default class NoteParent extends Vue {
           start: new Date("2020-09-21"),
           end: new Date("2020-09-22"),
           title: "Need to go shopping",
-          content: "<i class=\"v-icon material-icons\">shopping_cart</i>",
+          content: '<i class="v-icon material-icons">shopping_cart</i>',
           class: "leisure"
         }
         // {
@@ -74,5 +74,14 @@ export default class NoteParent extends Vue {
 
 .vuecal__now-line {
   color: #42b983;
+}
+
+.vuecal__cell-events-count {
+  font-size: 16px;
+  background: #42b983;
+  border-radius: 24px;
+  line-height: 24px;
+  min-width: 24px;
+  height: 24px;
 }
 </style>
